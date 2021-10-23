@@ -23,5 +23,10 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    public void creditButton()
+    {
+        SceneManager.LoadScene("CreditScene");
+    }
+
 
 }
