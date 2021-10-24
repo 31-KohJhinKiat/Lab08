@@ -16,6 +16,12 @@ public class CreditRollScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position = new Vector3(0, 50, 0);
+        if (transform.position.y >= 700)
+        {
+            transform.position = new Vector3 (Screen.width/2, -300, 0);
+        }
+
+
+        transform.position = transform.position + new Vector3(0, speed * Time.deltaTime, 0);
     }
 }
